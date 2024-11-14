@@ -9,7 +9,7 @@ return {
       transparency = true
     }
   },
-  config = function(_, opts)
+  config = function(module, opts)
     require('rose-pine').setup(opts) 
     vim.cmd.colorscheme 'rose-pine'
   end
