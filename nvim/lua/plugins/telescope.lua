@@ -1,5 +1,4 @@
 return {
- 
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
     requires = { {'nvim-lua/plenary.nvim'} },
@@ -16,6 +15,9 @@ return {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown({})
         }
+      },
+      defaults = {
+        file_ignore_patterns = {"node_modules", "package-lock.json", "package.json"}
       }
     },
     config = function(_, opts)
