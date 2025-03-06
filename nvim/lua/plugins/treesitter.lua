@@ -4,7 +4,7 @@ return {
     build = ":TSUpdate",
     opts = {
       auto_install = true,
-      ensure_installed = { "lua", "javascript" },
+      ensure_installed = { "lua", "javascript", "html", "typescript", "xml", "tsx" },
       highlight = { enable = true },
       indent = { enable = false },
     },
