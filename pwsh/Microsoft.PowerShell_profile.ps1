@@ -1,10 +1,10 @@
 oh-my-posh init pwsh --config ~/.config/oh-my-posh/config.omp.json | Invoke-Expression
 $env:XDG_CONFIG_HOME = "$HOME\.config"
 $env:NVIMC="$HOME\.config\nvim"
+$env:PROJECTS="D:\Projects"
 $env:VCPKG_ROOT = "C:\path\to\vcpkg"
 $env:PATH = "$env:VCPKG_ROOT;$env:PATH"
 New-Alias vim nvim 
-New-Alias :wqa exit
 
 function workspace([string]$path_start)
 {
@@ -44,4 +44,27 @@ function ln ($target, $link)
 function new-tab()
 {
     wezterm.exe cli spawn --cwd .
+}
+
+function count-lines()
+{
+    $skipExts   = '.exe','.dll','.zip','.png','.jpg','.gif', '.json', '.sum', '.mod'   # file extensions to skip
+    $skipDirs   = 'node_modules','.git','dist','build'        # directory names to skip
+
+    Get-ChildItem -Recurse -File -Force |
+        Where-Object {
+            # 1. not hidden
+            -not $_.Attributes.HasFlag([System.IO.FileAttributes]::Hidden)        -and
+            # 2. extension not on the block-list
+            $_.Extension -notin $skipExts                                         -and
+            # 3. no part of the full directory path matches a skipped folder name
+            ($_.DirectoryName -split [regex]::Escape([IO.Path]::DirectorySeparatorChar) |
+                Where-Object { $_ -in $skipDirs }).Count -eq 0
+            } |
+            ForEach-Object {
+                (Get-Content $_.FullName -ErrorAction SilentlyContinue |
+                    Measure-Object -Line).Lines
+                } |
+                Measure-Object -Sum |
+                ForEach-Object { $_.Sum }
 }

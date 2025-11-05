@@ -19,7 +19,8 @@ return {
         "svelte",
         "powershell_es",
         "clangd",
-        "java_language_server",
+        "glsl_analyzer",
+        "jdtls",
         "rust_analyzer",
         "html"
       }
