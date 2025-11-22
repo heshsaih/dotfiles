@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local mux = wezterm.mux
 
-config.color_scheme = "Gruvbox"
+config.color_scheme = "rose-pine"
 config.default_prog = {"/usr/bin/zsh"}
 config.window_background_opacity = 1
 
