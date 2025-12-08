@@ -55,7 +55,7 @@ if (!$?)
     }
 }
 
-ln "$PWD\wezterm\.wezterm.lua" "$HOME\.wezterm.lua"
+ln "$PWD\wezterm\.wezterm.lua" "$HOME\.wezterm_windows.lua"
 ln "$PWD\pwsh\Microsoft.PowerShell_profile.ps1" "$PROFILE"
 ln "$PWD\oh-my-posh\config.omp.json" "$HOME\.config\oh-my-posh\config.omp.json"
 ln "$PWD\nvim" "$HOME\.config\nvim"

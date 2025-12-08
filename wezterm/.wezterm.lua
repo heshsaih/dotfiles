@@ -10,7 +10,7 @@ config.font = wezterm.font("JetBrains Mono", {
 	weight = "Medium",
 })
 config.cell_width = 1
-config.font_size = 17
+config.font_size = 15
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 bar.apply_to_config(config, {
