@@ -5,6 +5,9 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "osc99"
+        },
+        {
           "foreground": "#9ccfd8",
           "style": "plain",
           "template": "\u279c",

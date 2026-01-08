@@ -31,7 +31,7 @@ function goto([string]$path)
     $path_test = $path
     if ($path.Length -eq 0)
     {
-        $path_test = $HOME
+        $path_test = "$HOME/personal/projects"
     }
     fd -t d '' $path_test | fzf | Set-Location
 }

@@ -44,18 +44,18 @@ return {
     --     require("gruvbox").setup(opts)
     --     vim.cmd.colorscheme("gruvbox")
     -- end,
-    	{
-    		"vague2k/vague.nvim",
-    		opts = {
-    			transparent = true,
-    			style = {
-    				strings = "bold",
-    				keywords = "bold",
-    			},
-    		},
-    		config = function(_, opts)
-    			require("vague").setup(opts)
-    			vim.cmd.colorscheme("vague")
-    		end,
-    	},
+        {
+            "vague2k/vague.nvim",
+            opts = {
+                transparent = true,
+                style = {
+                    strings = "bold",
+                    keywords = "bold",
+                },
+            },
+            config = function(_, opts)
+                require("vague").setup(opts)
+                vim.cmd.colorscheme("vague")
+            end,
+        },
 }
