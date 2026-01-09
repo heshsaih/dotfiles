@@ -5,9 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "osc99"
-        },
-        {
           "foreground": "#9ccfd8",
           "style": "plain",
           "template": "\u279c",
@@ -33,6 +30,15 @@
         }
       ],
       "type": "prompt"
+    },
+    {
+      "type": "osc7",
+      "style": "plain",
+      "foreground": "transparent",
+      "properties": {
+          "osc99": false,
+          "pwd": "osc7"
+      }
     }
   ],
   "final_space": true,

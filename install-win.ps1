@@ -57,5 +57,6 @@ if (!$?)
 
 ln "$PWD\wezterm\.wezterm.lua" "$HOME\.wezterm_windows.lua"
 ln "$PWD\pwsh\Microsoft.PowerShell_profile.ps1" "$PROFILE"
-ln "$PWD\oh-my-posh\config.omp.json" "$HOME\.config\oh-my-posh\config.omp.json"
+ln "$PWD\oh-my-posh\config-rose-pine.omp.json" "$HOME\.config\oh-my-posh\config.omp.json"
+ln "$PWD\starship\starship.toml" "$HOME\.config\starship\starship.toml"
 ln "$PWD\nvim" "$HOME\.config\nvim"
