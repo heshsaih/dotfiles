@@ -4,7 +4,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "rose-pine"
 config.default_prog = { "C:/Program Files/PowerShell/7/pwsh.exe -nologo" }
 config.window_background_opacity = 1
-
+config.window_close_confirmation = 'AlwaysPrompt'
 config.window_decorations = "TITLE | RESIZE"
 config.font = wezterm.font("JetBrains Mono", {
 	weight = "Medium",

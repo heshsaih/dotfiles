@@ -5,6 +5,8 @@ $env:PROJECTS="D:\Projects"
 $env:VCPKG_ROOT = "C:\path\to\vcpkg"
 $env:PATH = "$env:VCPKG_ROOT;$env:PATH"
 New-Alias vim nvim 
+Remove-Alias -Name ls
+Remove-Alias -Name rm
 
 $prompt = ""
 function Invoke-Starship-PreCommand {
