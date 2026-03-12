@@ -9,6 +9,12 @@ return {
 		config = function(_, opts)
 			require("mason").setup(opts)
 			require("mason-lspconfig").setup({})
+			vim.lsp.config["clangd"] = {
+				cmd = {
+					"clangd",
+					"--compile-commands-dir=build",
+				},
+			}
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.diagnostic.config({ virtual_text = true })

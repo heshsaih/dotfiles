@@ -1,12 +1,12 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.color_scheme = "rose-pine"
+config.color_scheme = "Gruvbox dark, hard (base16)"
 config.default_prog = { "C:/Program Files/PowerShell/7/pwsh.exe -nologo" }
 config.window_background_opacity = 1
 config.window_close_confirmation = 'AlwaysPrompt'
 config.window_decorations = "TITLE | RESIZE"
-config.font = wezterm.font("JetBrains Mono", {
+config.font = wezterm.font("CaskaydiaCove NFM", {
 	weight = "Medium",
 })
 config.cell_width = 1
