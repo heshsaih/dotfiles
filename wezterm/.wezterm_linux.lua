@@ -2,11 +2,11 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local mux = wezterm.mux
 
-config.color_scheme = "rose-pine"
+config.color_scheme = "Gruvbox Material (Gogh)"
 config.default_prog = {"/usr/bin/zsh"}
 config.window_background_opacity = 1
 
-config.window_decorations = "TITLE | RESIZE"
+config.window_decorations = "NONE"
 wezterm.on("gui-startup", function()
 	local _, _, window = mux.spawn_window({})
 	window:gui_window():maximize()
@@ -16,7 +16,7 @@ config.font = wezterm.font("JetBrains Mono", {
 	weight = "Medium",
 })
 config.cell_width = 1
-config.font_size = 13
+config.font_size = 17
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 bar.apply_to_config(config, {
