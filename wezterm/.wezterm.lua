@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-config.color_scheme = 'Gruvbox Material (Gogh)'
+config.color_scheme = 'Gruvbox dark, medium (base16)'
 config.default_prog = { "C:/Program Files/PowerShell/7/pwsh.exe -nologo" }
 config.window_background_opacity = 1
 config.window_close_confirmation = 'AlwaysPrompt'
