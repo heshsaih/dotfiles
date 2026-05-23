@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local mux = wezterm.mux
 
-config.color_scheme = "rose-pine"
+config.color_scheme = "Rosé Pine (Gogh)"
 config.default_prog = {"/usr/bin/zsh"}
 config.window_background_opacity = 1
 
@@ -16,7 +16,7 @@ config.font = wezterm.font("CaskaydiaCove NFM", {
 	weight = "Medium",
 })
 config.cell_width = 1
-config.font_size = 15
+config.font_size = 21
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 bar.apply_to_config(config, {
