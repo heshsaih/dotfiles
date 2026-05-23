@@ -143,6 +143,12 @@
                     ]
                 },
                 {
+                    "displayMode": "alwaysShow",
+                    "iconColor": "none",
+                    "id": "Bluetooth",
+                    "textColor": "none"
+                },
+                {
                     "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Network",
@@ -153,12 +159,6 @@
                     "iconColor": "none",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
-                    "textColor": "none"
-                },
-                {
-                    "displayMode": "alwaysShow",
-                    "iconColor": "none",
-                    "id": "Bluetooth",
                     "textColor": "none"
                 },
                 {
