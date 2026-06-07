@@ -5,6 +5,7 @@ return {
 		opts = {
 			auto_install = true,
 			highlight = { enable = true },
+            ensure_installed = {"go"},
 			indent = { enable = false },
 		},
 		config = function(_, opts)
