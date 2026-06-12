@@ -13,7 +13,7 @@ wezterm.on("gui-startup", function()
 end)
 
 config.font = wezterm.font("JetBrainsMono", {
-    weight = "Medium",
+    weight = "Light",
     style = "Normal",
 })
 config.cell_width = 1
