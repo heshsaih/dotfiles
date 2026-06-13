@@ -6,7 +6,7 @@ order = [ "default" ]
 
     [bar.default]
     center = [ "clock", "notifications" ]
-    end = [ "tray", "network", "brightness", "battery", "volume" ]
+    end = [ "tray", "network", "brightness", "bluetooth", "battery", "volume" ]
     margin_edge = 0
     margin_ends = 0
     radius = 0
@@ -107,7 +107,14 @@ effects = false
 [widget.active_window]
 scale = 1.05
 
+[widget.bluetooth]
+show_label = true
+
 [widget.cat]
+type = "noctalia/bongocat:cat"
+
+[widget.cat_2]
+input_device = "/dev/input/event14"
 type = "noctalia/bongocat:cat"
 
 [widget.clock]
