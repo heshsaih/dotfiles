@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-killall qs hyprpaper hypridle
+killall noctalia hyprpaper hypridle
 hyprctl reload
 hyprpaper &
 hypridle &
-qs -c noctalia-shell > $HOME/.noctalia.log &
+noctalia &

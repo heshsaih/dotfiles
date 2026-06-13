@@ -1,0 +1,127 @@
+[audio]
+enable_sounds = true
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    center = [ "clock", "notifications" ]
+    end = [ "tray", "network", "brightness", "battery", "volume" ]
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    shadow = false
+    start = [ "workspaces", "active_window" ]
+    thickness = 26
+    widget_spacing = 20
+
+[desktop_widgets]
+enabled = false
+
+[idle]
+pre_action_fade_seconds = 0
+
+[location]
+address = "Lodz, Poland"
+auto_locate = true
+
+[lockscreen]
+enabled = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1720.0
+    cy = 1317.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+[osd]
+position = "bottom_center"
+
+[plugins]
+enabled = [ "noctalia/bongocat" ]
+
+[shell]
+settings_show_advanced = true
+
+    [shell.panel]
+    session_placement = "centered"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "hyprlock"
+    enabled = true
+    glyph = "lock"
+    label = "Lock"
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Rosey AMOLED"
+
+[wallpaper]
+enabled = false
+
+[weather]
+effects = false
+
+[widget.active_window]
+scale = 1.05
+
+[widget.cat]
+type = "noctalia/bongocat:cat"
+
+[widget.clock]
+format = "{:%A %d, %H:%M}"
+
+[widget.network]
+show_label = false
+
+[widget.tray]
+drawer = true
+
+[widget.workspaces]
+empty_color = "on_surface_variant"
+focused_color = "on_tertiary"
+minimal = true
+occupied_color = "outline"
+scale = 1.5

@@ -106,3 +106,4 @@ source $ZSH/oh-my-zsh.sh
 alias vim='nvim'
 export QT_QPA_PLATFORMTHEME=qt6ct 
 export PATH=$PATH:/home/kmaciocha/.npm/bin
+export QT_STYLE_OVERRIDE=kvantum
