@@ -11,7 +11,7 @@ order = [ "default" ]
     margin_ends = 0
     radius = 0
     shadow = false
-    start = [ "workspaces", "active_window" ]
+    start = [ "workspaces", "active_window", "cat_3" ]
     thickness = 26
     widget_spacing = 20
 
@@ -85,6 +85,12 @@ settings_show_advanced = true
     [[shell.session.actions]]
     action = "reboot"
     enabled = true
+    shortcut = "r"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "suspend"
+    enabled = true
     shortcut = "4"
     variant = "default"
 
@@ -96,7 +102,7 @@ settings_show_advanced = true
 
 [theme]
 builtin = "Rosé Pine"
-community_palette = "Rosey AMOLED"
+community_palette = "Gruvbox Material"
 
 [wallpaper]
 enabled = false
@@ -105,7 +111,9 @@ enabled = false
 effects = false
 
 [widget.active_window]
-scale = 1.05
+icon_size = 16.0
+max_length = 150
+scale = 1.0
 
 [widget.bluetooth]
 show_label = true
@@ -117,8 +125,13 @@ type = "noctalia/bongocat:cat"
 input_device = "/dev/input/event14"
 type = "noctalia/bongocat:cat"
 
+[widget.cat_3]
+input_device = "/dev/input/event15"
+scale = 1.1000000000000001
+type = "noctalia/bongocat:cat"
+
 [widget.clock]
-format = "{:%A %d, %H:%M}"
+format = "{:%A %e, %H:%M}"
 
 [widget.network]
 show_label = false
