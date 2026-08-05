@@ -1,0 +1,93 @@
+* {
+  font:   "System Default 13";
+
+  bg0     : #181825;
+  bg1     : #1e1e2e;
+  bg2     : #313244;
+  bg3     : #45475a;
+  fg0     : #6c7086;
+  fg1     : #9399b2;
+  fg2     : #cdd6f4;
+  red     : #f38ba8;
+  green   : #a6e3a1;
+  yellow  : #f9e2af;
+  blue    : #89b4fa;
+  magenta : #cba6f7;
+  cyan    : #89dceb;
+
+  accent: @magenta;
+  urgent: @yellow;
+
+  background-color : transparent;
+  text-color       : #cdd6f4;
+
+  margin  : 0;
+  padding : 0;
+  spacing : 0;
+}
+
+configuration {
+    show-icons: true;
+}
+
+window {
+  location : center;
+  width    : 360px;
+  x-offset : 4px;
+  y-offset : 26px;
+
+  background-color: @bg1;
+  border: 2px;
+  border-color: @bg3;
+  border-radius: 6px;
+}
+
+inputbar {
+  spacing  : 8px;
+  padding  : 12px 12px;
+  children : [ entry ];
+  background-color: @bg0;
+}
+
+listview {
+  padding      : 12px 0px;
+  lines        : 8;
+  columns      : 1;
+  scrollbar    : false;
+  fixed-height : false;
+  dynamic      : true;
+}
+
+element {
+  padding : 10px 10px;
+  spacing : 10px;
+}
+
+element normal urgent {
+  text-color: @urgent;
+}
+
+element normal active {
+  text-color: @accent;
+}
+
+element alternate active {
+  text-color: @accent;
+}
+
+element selected {
+  text-color       : @bg1;
+  background-color : @accent;
+}
+
+element selected urgent {
+  background-color: @urgent;
+}
+
+element-icon {
+  size: 1em;
+}
+
+element-text {
+  text-color: inherit;
+}
