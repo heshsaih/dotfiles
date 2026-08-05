@@ -1,4 +1,17 @@
 return {
+	"navarasu/onedark.nvim",
+	priority = 1000, -- make sure to load this before all the other start plugins
+	config = function()
+		require("onedark").setup({
+			style = "warm",
+	           transparent = true,
+	           diagnostics = {
+	               darker = false,
+	               background = true,
+	           }
+		})
+		require("onedark").load()
+	end,
 	-- {
 	-- "sainnhe/gruvbox-material",
 	-- lazy = false,
@@ -24,17 +37,17 @@ return {
 	-- 	require("rose-pine").setup(opts)
 	-- 	vim.cmd.colorscheme("rose-pine")
 	-- end,
-	"catppuccin/nvim",
-	name = "catppuccin",
-	priority = 1000,
-	opts = {
-		flavour = "macchiato",
-		transparent_background = true,
-	},
-	config = function(_, opts)
-		require("catppuccin").setup(opts)
-		vim.cmd.colorscheme("catppuccin")
-	end,
+	-- "catppuccin/nvim",
+	-- name = "catppuccin",
+	-- priority = 1000,
+	-- opts = {
+	-- 	flavour = "macchiato",
+	-- 	transparent_background = true,
+	-- },
+	-- config = function(_, opts)
+	-- 	require("catppuccin").setup(opts)
+	-- 	vim.cmd.colorscheme("catppuccin")
+	-- end,
 	-- "ellisonleao/gruvbox.nvim",
 	-- opts = {
 	--     transparent_mode = true,
