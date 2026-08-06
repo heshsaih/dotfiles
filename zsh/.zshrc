@@ -107,3 +107,10 @@ alias vim='nvim'
 export QT_QPA_PLATFORMTHEME=qt6ct 
 export PATH=$PATH:/home/kmaciocha/.npm/bin
 export QT_STYLE_OVERRIDE=kvantum
+
+find-project() {
+  local dir
+  dir=$(fd -C ~/personal/projects --max-depth 2 --min-depth 1 -t d | fzf) && cd "$HOME/personal/projects/$dir" && zle reset-prompt
+}
+zle -N find-project
+bindkey '^[^F' find-project
