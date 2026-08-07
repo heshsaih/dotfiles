@@ -5,15 +5,16 @@ enable_sounds = true
 order = [ "default" ]
 
     [bar.default]
-    border = "on_surface"
+    border = "surface_variant"
+    border_width = 0.5
     center = [ "clock", "notifications" ]
     end = [ "tray", "network", "brightness", "bluetooth", "battery", "volume" ]
-    margin_edge = 8
-    margin_ends = 8
-    radius = 6
+    margin_edge = 4
+    margin_ends = 4
+    radius = 8
     shadow = false
     start = [ "workspaces", "active_window", "cat_3" ]
-    thickness = 30
+    thickness = 32
     widget_spacing = 20
 
 [desktop_widgets]
