@@ -7,7 +7,6 @@ vim.cmd("set scrolloff=8")
 vim.cmd("set colorcolumn=120")
 vim.cmd("set updatetime=50")
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>cp", ":below Compile<CR>")
 if vim.loop.os_uname().sysname == "Windows" then
@@ -39,3 +38,4 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 
 require("lazy").setup("plugins", opts)
+

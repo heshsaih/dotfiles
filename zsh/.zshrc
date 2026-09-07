@@ -110,7 +110,20 @@ export QT_STYLE_OVERRIDE=kvantum
 
 find-project() {
   local dir
-  dir=$(fd -C ~/personal/projects --max-depth 2 --min-depth 1 -t d | fzf) && cd "$HOME/personal/projects/$dir" && zle reset-prompt
+  dir=$(fd -C ~/personal/projects --max-depth 2 --min-depth 1 -t d | fzf) 
+  cd "$HOME/personal/projects/$dir"
+
+  local hook func
+  for hook in precmd chpwd; do
+    for func in ${(P)${:-${hook}_functions}}; do
+      [[ "$func" == _* ]] && continue
+      $func 2>/dev/null
+    done
+  done
+  
+  zle .reset-prompt
+
+
 }
 zle -N find-project
 bindkey '^[^F' find-project
