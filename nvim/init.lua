@@ -6,6 +6,7 @@ vim.cmd("set number relativenumber")
 vim.cmd("set scrolloff=8")
 vim.cmd("set colorcolumn=120")
 vim.cmd("set updatetime=50")
+vim.cmd("set cursorline")
 vim.g.mapleader = " "
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>cp", ":below Compile<CR>")
@@ -38,4 +39,3 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 
 require("lazy").setup("plugins", opts)
-
