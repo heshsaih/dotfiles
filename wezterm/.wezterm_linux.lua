@@ -2,9 +2,10 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local mux = wezterm.mux
 
-config.color_scheme = 'Arthur (Gogh)'
+config.color_scheme = 'Mellifluous'
 config.default_prog = { "/usr/bin/zsh" }
 config.window_background_opacity = 1
+config.text_min_contrast_ratio = 4.5
 
 config.window_decorations = "NONE"
 wezterm.on("gui-startup", function()
