@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local mux = wezterm.mux
 
-config.color_scheme = 'Mellifluous'
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.default_prog = { "/usr/bin/zsh" }
 config.window_background_opacity = 1
 config.text_min_contrast_ratio = 4.5
@@ -18,7 +18,7 @@ config.font = wezterm.font("JetBrainsMono", {
 	style = "Normal",
 })
 config.cell_width = 1
-config.font_size = 14
+config.font_size = 16
 
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
 bar.apply_to_config(config, {

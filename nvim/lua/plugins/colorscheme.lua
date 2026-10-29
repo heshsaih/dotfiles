@@ -63,15 +63,15 @@ return {
 	-- ===================================================
 	-- ## Gruvbox
 	--
-	-- "ellisonleao/gruvbox.nvim",
-	-- opts = {
-	--     transparent_mode = true,
-	--     bold = true,
-	-- },
-	-- config = function(_, opts)
-	--     require("gruvbox").setup(opts)
-	--     vim.cmd.colorscheme("gruvbox")
-	-- end,
+	"ellisonleao/gruvbox.nvim",
+	opts = {
+	    transparent_mode = true,
+	    bold = true,
+	},
+	config = function(_, opts)
+	    require("gruvbox").setup(opts)
+	    vim.cmd.colorscheme("gruvbox")
+	end,
 	--
 	-- ===================================================
 	-- ## Vague
@@ -124,14 +124,28 @@ return {
 	-- ===================================================
 	-- ## Mellifluous
 	--
-	"ramojus/mellifluous.nvim",
-	opts = {
-		transparent_background = {
-			enabled = true
-		},
-	},
-	config = function(_, opts)
-		require("mellifluous").setup(opts)
-		vim.cmd.colorscheme("mellifluous")
-	end,
+	-- "ramojus/mellifluous.nvim",
+	-- opts = {
+	-- 	transparent_background = {
+	-- 		enabled = true
+	-- 	},
+	-- },
+	-- config = function(_, opts)
+	-- 	require("mellifluous").setup(opts)
+	-- 	vim.cmd.colorscheme("mellifluous")
+	-- end,
+	-- ===================================================
+	-- ## Onenord
+	--
+    -- "rmehri01/onenord.nvim",
+    -- opts = {
+    --     disable = {
+    --         background = true,
+    --         float_background = true
+    --     }
+    -- },
+    -- config = function (_, opts)
+    --     require("onenord").setup(opts)
+    --     vim.cmd.colorscheme("onenord")
+    -- end
 }
